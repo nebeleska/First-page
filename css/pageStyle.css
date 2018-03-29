@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+
+body {
+    letter-spacing: 2px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+}
+
+section .slider {
+    width: 70%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+nav {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    font-size: 3em;
+}
+
+.uk-link,
+a {
+    color: #000;
+}
