@@ -37,7 +37,7 @@ section .slider {
 
 }
 
-.topup {
+#top-up {
     position: fixed;
     bottom: 5%;
     left: 0;
