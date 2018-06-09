@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+
+header object {
+    width: 300px;
+    height: 300px;
+
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-me span {
+    font-size: 20px;
+    width: 75%;
+    padding: 5%;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.about-me object {
+    height: 90px;
+}
+
+section .slider {
+    width: 80%;
+    margin-bottom: 15%;
+
+}
+
+.topup {
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+a.uk-totop.uk-icon svg {
+    width: 70px;
+    height: 70px;
+    color: #333;
+    animation: top-up 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes top-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+a.uk-totop.uk-icon svg:hover {
+    color: #000;
+}
+
+nav {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+}
+
+.uk-link,
+a {
+    color: #000;
+    font-size: 2em;
+}
+
+uk-nav uk-nav-default {
+    font: #CCC000;
+}
+
+nav i.fas.fa-align-right {
+    font-size: 50px;
+    border: none;
+}
+
+nav .uk-button-default {
+    border: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 5%;
+    line-height: 1.2;
+}
+
+footer .fas,
+.fab {
+    color: #000;
+    font-size: 50px;
+    margin: 20px;
+}
