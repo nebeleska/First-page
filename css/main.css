@@ -4,12 +4,31 @@
     margin: auto;
 }
 
-section h1 {
-    font-size: 40px;
+header object {
+    width: 300px;
+    height: 300px;
+
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-me span {
+    font-size: 20px;
+    width: 75%;
     padding: 5%;
     letter-spacing: 2px;
+    line-height: 1.5;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+}
+
+.about-me object {
+    height: 90px;
 }
 
 section .slider {
@@ -31,12 +50,22 @@ a.uk-totop.uk-icon svg {
     width: 70px;
     height: 70px;
     color: #333;
-    border: 5px solid #333;
-    border-radius: 50%;
+    animation: top-up 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes top-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }
 
 a.uk-totop.uk-icon svg:hover {
-    border: 5px solid #000;
     color: #000;
 }
 
@@ -49,7 +78,7 @@ nav {
 .uk-link,
 a {
     color: #000;
-    font-size: 5em;
+    font-size: 2em;
 }
 
 uk-nav uk-nav-default {
@@ -68,4 +97,12 @@ nav .uk-button-default {
 footer {
     position: fixed;
     bottom: 5%;
+    line-height: 1.2;
+}
+
+footer .fas,
+.fab {
+    color: #000;
+    font-size: 50px;
+    margin: 20px;
 }
